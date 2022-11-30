@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-gradient-radial{
+    background-image: radial-gradient(rgba(2255, 255, 255, 0.1) 9%, transparent 9%); 
+    background-position: 0% 0%; 
+    background-size: 12vmin 12vmin
+    }
+    .bg-glass{
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        background: rgba(10,10,10,.65);
+        box-shadow: 0 8px 32px rgb(2,4,24);
+        border-right: 2px solid rgba(2255, 255, 255, .09);
+    };
