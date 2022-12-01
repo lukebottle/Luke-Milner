@@ -13,7 +13,7 @@ window.onload = init;
     }
     
         const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
-        url = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
+        url = `https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
         fetch(url)
         .then(thisponse => thisponse.json())
         .then(data => console.log(data));
