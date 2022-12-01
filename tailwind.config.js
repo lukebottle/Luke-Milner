@@ -1,28 +1,40 @@
-// tailwind.config.js
 module.exports = {
   purge: [
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.html',
-    './*.html'
+  './_includes/**/*.html',
+  './_layouts/**/*.html',
+  './_posts/*.html',
+  './*.html'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
+      // Tiny => @media (min-width: 320px) { ... }
+      'ty': '320px',
+      // Mobile
+      'md': '640px',
+      // Tablet
+      'sm': '768px',
+      // Desktop
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      'tiny': {'max': '320px'},
+      'mob': {'max': '768px'},
+    },
+    fontFamily:{
+      'Josefin': ['Josefin Sans', 'sans-serif'],
+      'bungee': ['Bungee', 'cursive'],
+    },
+   
+  },
+  variants: {
+    extend: {
+      
     }
-  }
+  },
+  plugins: [
+  require('@tailwindcss/typography'),
+  //require('@tailwindcss/line-clamp'),
+  //require('@tailwindcss/forms'),
+  ]
 }

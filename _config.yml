@@ -1,3 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/luke-milner" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
+
+keep_files: ["_imgages", "_js"]
+
+include: ["node_modules/tailwindcss"]
+
