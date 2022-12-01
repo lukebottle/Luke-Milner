@@ -36,6 +36,7 @@ if (userState == "1"){
 userNameText[0].textContent = userName;
 userStateText[0].textContent = userState;
 userStateText[0].classList.add(`text-[${userStateColor}]`);
+loadingBar[0].style.width = "100%";
 }
 
 window.onload = init;

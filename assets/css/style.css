@@ -659,6 +659,20 @@ video {
   --tw-text-opacity: 1;
   color: rgb(134 134 134 / var(--tw-text-opacity));
 }
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.delay-300{
+  transition-delay: 300ms;
+}
+.duration-75{
+  transition-duration: 75ms;
+}
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
 
 .bg-gradient-radial{
     background-image: radial-gradient(rgba(2255, 255, 255, 0.1) 9%, transparent 9%); 
