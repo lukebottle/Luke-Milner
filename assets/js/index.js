@@ -1,15 +1,23 @@
+
 let fontColor = window.localStorage.getItem('font-color');
 window.onload = init;
-
   function init(){
     let themeLoad = document.querySelectorAll('.js-mainTheme');
+    if (fontColor == null){
+
+
+    } else{
+    
     themeLoad[0].classList.replace('text-white', fontColor);
 
+    }
+    
         const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
         url = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
         fetch(url)
-        .then(response => response.json())
+        .then(thisponse => thisponse.json())
         .then(data => console.log(data));
+        
         
         
   }
