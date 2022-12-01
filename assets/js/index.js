@@ -1,8 +1,48 @@
 
 let fontColor = window.localStorage.getItem('font-color');
+ //api url
+ const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
+ apiUrl = `https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
+
+ // Defining async function
+ async function getApi(url) {
+
+ // Storing response
+ const response = await fetch(url);
+
+ // Storing data in form of JSON
+ var data = await response.json();
+ show(data);
+}
+// Calling that async function
+getApi(apiUrl);
+
+function show(data){
+userName = data.response.players[0].personaname,
+userState = data.response.players[0].personastate;
+
+userNameText = document.querySelectorAll('.js-userName');
+userStateText = document.querySelectorAll('.js-userState');
+loadingBar = document.querySelectorAll('.js-loadBar');
+console.log(loadingBar[0])
+if (userState == 0){
+ userState = "Offline";
+ userStateColor = "#868686";
+};
+if (userState == "1"){
+ userState = "Online";
+ userStateColor = "#56c9dc";
+};
+userNameText[0].textContent = userName;
+userStateText[0].textContent = userState;
+userStateText[0].classList.add(`text-[${userStateColor}]`);
+}
+
 window.onload = init;
   function init(){
+
     let themeLoad = document.querySelectorAll('.js-mainTheme');
+    
     if (fontColor == null){
 
 
@@ -11,16 +51,8 @@ window.onload = init;
     themeLoad[0].classList.replace('text-white', fontColor);
 
     }
-    
-        const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
-        url = `https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
-        fetch(url)
-        .then(thisponse => thisponse.json())
-        .then(data => console.log(data));
-        
-        
-        
-  }
+}
+  
 
 
 function myFunction(element, color){
