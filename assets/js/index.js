@@ -2,13 +2,17 @@
 let fontColor = window.localStorage.getItem('font-color');
  //api url
  const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
- apiUrl = `https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
+ apiUrl = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
 
  // Defining async function
  async function getApi(url) {
 
  // Storing response
- const response = await fetch(url);
+ const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+ });
 
  // Storing data in form of JSON
  var data = await response.json();
