@@ -28,7 +28,6 @@ userState = data.response.players[0].personastate;
 userNameText = document.querySelectorAll('.js-userName');
 userStateText = document.querySelectorAll('.js-userState');
 loadingBar = document.querySelectorAll('.js-loadBar');
-console.log(loadingBar[0])
 if (userState == 0){
  userState = "Offline";
  userStateColor = "#868686";
