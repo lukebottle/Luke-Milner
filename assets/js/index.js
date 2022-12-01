@@ -2,7 +2,7 @@
 let fontColor = window.localStorage.getItem('font-color');
  //api url
  const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
- apiUrl = `/api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
+ apiUrl = `https://proxy.cors.sh/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
 
  // Defining async function
  async function getApi(url) {
@@ -24,7 +24,6 @@ userState = data.response.players[0].personastate;
 userNameText = document.querySelectorAll('.js-userName');
 userStateText = document.querySelectorAll('.js-userState');
 loadingBar = document.querySelectorAll('.js-loadBar');
-console.log(loadingBar[0])
 if (userState == 0){
  userState = "Offline";
  userStateColor = "#868686";
