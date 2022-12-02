@@ -17,7 +17,10 @@ const config = {
         host: 'localhost',
         proxy: {
             '/api': 'http://127.0.0.1:4000/luke-milner/'
-          }
+          },
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
