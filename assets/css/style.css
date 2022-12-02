@@ -412,9 +412,6 @@ video {
 .top-\[92px\]{
   top: 92px;
 }
-.col-start-1{
-  grid-column-start: 1;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -440,9 +437,6 @@ video {
 .h-10{
   height: 2.5rem;
 }
-.h-screen{
-  height: 100vh;
-}
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -462,12 +456,6 @@ video {
 }
 .max-w-\[1040px\]{
   max-width: 1040px;
-}
-.grid-flow-row{
-  grid-auto-flow: row;
-}
-.auto-rows-min{
-  grid-auto-rows: min-content;
 }
 .auto-rows-fr{
   grid-auto-rows: minmax(0, 1fr);
@@ -572,11 +560,11 @@ video {
 .pt-8{
   padding-top: 2rem;
 }
-.pt-16{
-  padding-top: 4rem;
-}
 .pb-16{
   padding-bottom: 4rem;
+}
+.pt-16{
+  padding-top: 4rem;
 }
 .text-center{
   text-align: center;
@@ -717,9 +705,6 @@ video {
     @media (max-width: 768px){
   .mob\:hidden{
     display: none;
-  }
-  .mob\:grid-flow-col{
-    grid-auto-flow: column;
   }
   .mob\:auto-rows-auto{
     grid-auto-rows: auto;
