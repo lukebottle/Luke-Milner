@@ -2,7 +2,7 @@
 let fontColor = window.localStorage.getItem('font-color');
  //api url
  const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
-       corsProxy = "", // https://proxy.cors.sh/ use this in production. // https://cors-anywhere.herokuapp.com use this in local host.
+       corsProxy = "https://proxy.cors.sh/", // https://proxy.cors.sh/ use this in production. // https://cors-anywhere.herokuapp.com use this in local host.
  
  apiUrl = `${corsProxy}https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=76561198077564405`;
 
