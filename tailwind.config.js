@@ -24,6 +24,7 @@ module.exports = {
     fontFamily:{
       'Josefin': ['Josefin Sans', 'sans-serif'],
       'bungee': ['Bungee', 'cursive'],
+      'OpenSans': ['Open Sans', 'sans-serif'],
     },
    
   },

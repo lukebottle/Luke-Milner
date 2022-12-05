@@ -1,10 +1,57 @@
+let lat = '',
+lon = '',
+UserLat = '',
+UserLon = '';
+
+let name = null,
+    temp = null,
+    icon = null,
+    desc = null,
+    humidity = null,
+    wind = null;
+const successCallback = (position) => {
+    UserLat = position.coords.latitude;
+    UserLon = position.coords.longitude;
+    fetch(`https://lukebottle.pythonanywhere.com/location/long=${UserLat}&lat=${UserLon}`)
+    .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data)
+        let ResponseName = data.name,
+        ResponseTemp = data.main.temp,
+        ResponseIcon = data.weather[0].icon,
+        ResponseDesc = data.weather[0].description,
+        ResponseHumidity = data.main.humidity,
+        ResponseWind = data.wind.speed;
+
+        name = document.querySelectorAll('.js-city'),
+        temp = document.querySelectorAll('.js-temp');
+        icon = document.querySelectorAll('.js-icon');
+        desc = document.querySelectorAll('.js-desc');
+        humidity = document.querySelectorAll('.js-humidity');
+        wind = document.querySelectorAll('.js-wind');
+        name[0].textContent = ResponseName;
+        temp[0].textContent = `${ResponseTemp}°C`;
+        icon[0].src = `https://openweathermap.org/img/wn/${ResponseIcon}.png`;
+        desc[0].innerHTML = `${ResponseDesc}`;
+        humidity[0].textContent = `humidity: ${ResponseHumidity}`;
+        wind[0].textContent = `wind: ${ResponseWind}`;
+      });
+  };
+  
+  const errorCallback = (error) => {
+    console.log(error);
+  };
+  
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 let fontColor = window.localStorage.getItem('font-color');
- //api url
- const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
-       corsProxy = "", // https://proxy.cors.sh/ use this in production. // https://cors-anywhere.herokuapp.com use this in local host.
- 
- apiUrl = `https://lukebottle.pythonanywhere.com/`;
+
+let apiUrl = `https://lukebottle.pythonanywhere.com/`;
+
+// let apiUrl = `http://127.0.0.1:5000`;
+
 
  // Defining async function
  async function getApi(url) {

@@ -7,13 +7,13 @@ title: 'Luke Milner'
 {%- comment -%} mobile - mob {%- endcomment -%}
 {%assign fill = "text-white"%}
   {%assign icon-fill = "#d0d0d1"%}
-  <div id="js-mainTheme" class="js-mainTheme font-light {{fill}} bg-zinc-900 bg-gradient-radial font-Josefin h-fit pb-12">
+  <div id="js-mainTheme" class="js-mainTheme font-light {{fill}}">
     <nav class="sm:hidden fixed grid gap-6 p-4 ml-16 top-[92px] bg-zinc-800 grid-row-3 grid-row-1 w-fit rounded-2xl mob:hidden">
         <button><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path id="js-iconOne" fill="{{icon-fill}}" d="M8 42V18L24.1 6 40 18v24H28.3V27.75h-8.65V42Zm3-3h5.65V24.75H31.3V39H37V19.5L24.1 9.75 11 19.5Zm13-14.65Z"/></svg></button>
         <button  data-bs-toggle="tooltip" title="milner1337@gmail.com"><svg class="js-iconTwo" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="{{icon-fill}}" d="M24 44q-4.15 0-7.8-1.575-3.65-1.575-6.35-4.275-2.7-2.7-4.275-6.35Q4 28.15 4 24t1.575-7.8Q7.15 12.55 9.85 9.85q2.7-2.7 6.35-4.275Q19.85 4 24 4t7.8 1.575q3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24v2.65q0 2.8-1.975 4.725Q40.05 33.3 37.2 33.3q-1.8 0-3.4-.875-1.6-.875-2.45-2.475-1.3 1.7-3.25 2.525T24 33.3q-3.9 0-6.625-2.7T14.65 24q0-3.9 2.725-6.65Q20.1 14.6 24 14.6t6.625 2.75Q33.35 20.1 33.35 24v2.65q0 1.55 1.125 2.6T37.2 30.3q1.55 0 2.675-1.05Q41 28.2 41 26.65V24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.1 0-12.05 4.95Q7 16.9 7 24q0 7.1 4.95 12.05Q16.9 41 24 41h10.7v3Zm0-13.7q2.65 0 4.5-1.825T30.35 24q0-2.7-1.85-4.55-1.85-1.85-4.5-1.85t-4.5 1.85Q17.65 21.3 17.65 24q0 2.65 1.85 4.475Q21.35 30.3 24 30.3Z"/></svg></button>
         <button><svg class="js-iconThree" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="{{icon-fill}}" d="m16 35.9-12-12 12.1-12.1 2.15 2.15L8.3 23.9l9.85 9.85Zm15.9.1-2.15-2.15 9.95-9.95-9.85-9.85L32 11.9l12 12Z"/></svg></button>
     </nav>
-    <div class="w-full mx-auto max-w-[1040px] sm:pr-0">
+    <div class="w-full mx-auto max-w-[1040px] h-full sm:pr-0">
         <div class="flex flex-col items-center gap-4">
     <h1 class="relative flex justify-start pt-8 text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span class="bg-purple-700 js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span></h1>
 <div class="w-full bg-white h-2.5 dark:bg-gray-700">
@@ -32,52 +32,26 @@ title: 'Luke Milner'
         <button onclick="myFunction(this, 'text-violet-300')"><div class="w-10 h-10 rounded-full bg-violet-300"></div></button>
     </div>
     
-    <div class="flex flex-col w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-zinc-800">
-       <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-flow-row mob:gap-3 sm:auto-rows-min mob:grid-cols-1 mob:auto-rows-auto">
-        <div class="text-4xl font-bold w-fit h-fit underline decoration-sky-700/[.33]">More coming soon...</div>
-        <div class="text-4xl font-bold sm:col-start-1 w-fit h-fit">Excepteur sint occaecat cupidatat non proident</div>
-        <div class="sm:col-start-1 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-       </div>
-       <div class="grid grid-cols-3 gap-6 pt-16 pb-16 text-center auto-rows-fr place-items-center mob:grid-cols-1 mob:auto-rows-auto mob:gap-3">
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
-            <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div class="flex flex-row w-full h-full p-10 mt-6 mb-12 space-x-48 rounded-2xl bg-zinc-800">
+    <div class="grid grid-flow-col grid-cols-2 gap-12">
+
+        <div class="grid grid-flow-row gap-6 grid-row-3">
+            <span class="text-5xl underline decoration-indigo-500">Weather in your area 🥶</span>
+            <span class="text-2xl">Don't worry, your loaction is safe</span>
+            <span class="text-1xl">This use's your location's longitude latitude to request data from the WeatherAPI, which is then displayed here. If it isn't displaying after allowing the location, reload the page</span>
         </div>
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
+        <div class="flex flex-col items-start justify-around w-full h-full p-4 bg-zinc-900 rounded-3xl font-OpenSans">
+            <span class="text-3xl font-bold decoration-indigo-500">Weather in <span class="js-city">...</span></span>
+            <span class="text-4xl font-bold js-temp">0°C</span>
             <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="flex flex-row items-center">
+            <img class="js-icon" src="" alt="">
+            <span class="js-desc">description</span>
+            </div>
+            <span class="js-humidity">humidity:</span>
+            <span class="js-wind">wind:</span>
+            </div>
         </div>
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
-            <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
-            <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
-            <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-        <div class="border-sky-700/[.33] border-[2px] p-4">
-            <div></div>
-            <div class="flex flex-col">
-                <div class="w-full h-32"></div>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-    </div>
-    <div class="grid grid-flow-col space-x-16 place-items-center">
-       
     </div>
    
     </div>

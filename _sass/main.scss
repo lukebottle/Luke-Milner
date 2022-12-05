@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,7 @@
 .bg-gradient-radial{
     background-image: radial-gradient(rgba(2255, 255, 255, 0.1) 9%, transparent 9%); 
     background-position: 0% 0%; 
-    background-size: 12vmin 12vmin
+    background-size: 12vmin 12vmin;
     }
     .bg-glass{
         backdrop-filter: blur(6px);
