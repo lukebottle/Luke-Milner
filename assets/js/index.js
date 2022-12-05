@@ -4,7 +4,7 @@ let fontColor = window.localStorage.getItem('font-color');
  const apiKey = "EA5D5BCBBC33290E41E194D1EC5373D8",
        corsProxy = "", // https://proxy.cors.sh/ use this in production. // https://cors-anywhere.herokuapp.com use this in local host.
  
- apiUrl = `http://lukebottle.pythonanywhere.com/`;
+ apiUrl = `https://lukebottle.pythonanywhere.com/`;
 
  // Defining async function
  async function getApi(url) {
