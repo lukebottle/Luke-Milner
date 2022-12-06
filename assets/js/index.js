@@ -1,3 +1,51 @@
+let pokeButton = null;
+let pokemon = {
+    fetchPokemon: function(name) {
+        fetch(
+                `https://lukebottle.pythonanywhere.com/poke/name=${name}`
+
+            )
+            .then((response) => response.json())
+            .then((data) => this.displayPokemon(data));
+
+    },
+    displayPokemon: function(data) {
+        //two ways of grabbing data from .json.
+        let icon = data['sprites']['other']['home']['front_default'];
+        name = data.name,
+        height = data.height / 10;
+        weight = data.weight / 10;
+        ability = data.abilities[0].ability.name;
+        hp = data.stats[0].base_stat;
+        attack = data.stats[1].base_stat;
+        defense = data.stats[2].base_stat;
+        id = data.game_indices[0].game_index;
+        
+        document.querySelector(".js-pokeIcon").src = "" + icon
+        document.querySelector(".js-pokeName").innerText = name;
+        document.querySelector(".js-PokeHeight").innerText = `${height}M`; 
+        document.querySelector(".js-PokeWeight").innerText =`${weight}'KG'`;
+        document.querySelector(".js-PokeAbility").innerText = ability;
+        document.querySelector(".js-PokeHealth").innerText = hp;
+        document.querySelector(".js-PokeAbility").innerText = attack;
+        document.querySelector(".js-PokeDefense").innerText = defense;
+        document.querySelector(".js-index").innerText = `#${id}`;
+        healthBar = document.querySelectorAll('.js-PokeHealthBar');
+        AttackBar = document.querySelectorAll('.js-PokeAttackBar');
+        DefenseBar = document.querySelectorAll('.js-PokeDefenseBar');
+
+        healthBar[0].style.width = `${hp}%`;
+        AttackBar[0].style.width = `${attack}%`;
+        DefenseBar[0].style.width = `${defense}%`;
+
+
+    },
+    search: function() {
+        this.fetchPokemon(document.querySelector(".js-search-bar").value.toLowerCase());
+    }
+}
+
+
 let lat = '',
 lon = '',
 UserLat = '',
@@ -17,7 +65,6 @@ const successCallback = (position) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data)
         let ResponseName = data.name,
         ResponseTemp = data.main.temp,
         ResponseIcon = data.weather[0].icon,
@@ -89,6 +136,17 @@ loadingBar[0].style.width = "100%";
 
 window.onload = init;
   function init(){
+    document.querySelectorAll(".js-button")[0].addEventListener("click", function() {
+    pokemon.search();
+
+    })
+    document.querySelectorAll(".js-search-bar")[0].addEventListener("keypress", function(e) {
+        if (e.key === 'Enter'){
+            pokemon.search();
+
+        }
+    
+        })
 
     let themeLoad = document.querySelectorAll('.js-mainTheme');
     
