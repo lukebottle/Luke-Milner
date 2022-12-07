@@ -27,7 +27,7 @@ let pokemon = {
         document.querySelector(".js-PokeWeight").innerText =`${weight}'KG'`;
         document.querySelector(".js-PokeAbility").innerText = ability;
         document.querySelector(".js-PokeHealth").innerText = hp;
-        document.querySelector(".js-PokeAbility").innerText = attack;
+        document.querySelector(".js-PokeAttack").innerText = attack;
         document.querySelector(".js-PokeDefense").innerText = defense;
         document.querySelector(".js-index").innerText = `#${id}`;
         healthBar = document.querySelectorAll('.js-PokeHealthBar');
@@ -36,6 +36,7 @@ let pokemon = {
 
         healthBar[0].style.width = `${hp}%`;
         AttackBar[0].style.width = `${attack}%`;
+
         DefenseBar[0].style.width = `${defense}%`;
 
 
