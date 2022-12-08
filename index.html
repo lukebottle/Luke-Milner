@@ -10,13 +10,13 @@ title: 'Luke Milner'
   <div id="js-mainTheme" class="js-mainTheme font-light {{fill}} bg-no-repeat bg-cover bg-hero-wave">
     <div class="w-full mx-auto max-w-[1040px] h-full sm:pr-0">
         <div class="flex flex-col items-center gap-4">
-    <h1 class="relative flex justify-start pt-8 text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span class="bg-zinc-800 js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span></h1>
-<div class="w-full bg-white h-2.5 dark:bg-gray-700">
-  <div class="bg-purple-600 h-2.5 dark:bg-purple-500 js-loadBar transition-all ease-in" style="width: 0%"></div>
+    <h1 class="relative flex justify-start pt-8 text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span class="bg-LM-orange-500 js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span></h1>
+<div class="w-full bg-white h-2.5 dark:bg-LM-black-700">
+  <div class="bg-purple-600 h-2.5 dark:bg-LM-orange-500 js-loadBar transition-all ease-in" style="width: 0%"></div>
 </div>
     </div>
 
-    <div class="grid w-full p-4 rounded-t-none justify-items-center bg-zinc-800 js-btnCard sm:gap-24 sm:gap-6 mob:gap-12 sm:grid-cols-8 sm:grid-rows-1 rounded-2xl mob:grid-rows-8 mob:grid-cols-4">
+    <div class="grid w-full p-4 rounded-t-none justify-items-center bg-LM-black-700 js-btnCard sm:gap-24 sm:gap-6 mob:gap-12 sm:grid-cols-8 sm:grid-rows-1 rounded-2xl mob:grid-rows-8 mob:grid-cols-4">
         <button onclick="myFunction(this, 'text-white')"><div class="w-10 h-10 bg-white rounded-full"></div></button>
         <button onclick="myFunction(this, 'text-red-300')"><div class="w-10 h-10 bg-red-300 rounded-full js-btnRed"></div></button>
         <button onclick="myFunction(this, 'text-orange-300')"><div class="w-10 h-10 bg-orange-300 rounded-full"></div></button>
@@ -27,15 +27,15 @@ title: 'Luke Milner'
         <button onclick="myFunction(this, 'text-violet-300')"><div class="w-10 h-10 rounded-full bg-violet-300"></div></button>
     </div>
     
-    <div class="flex flex-col items-start w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-zinc-800">
+    <div class="flex flex-col items-start w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-LM-black-700">
     <div class="grid gap-12 pb-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-2 sm:grid-flow-col sm:grid-cols-2 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
         <div class="grid grid-flow-row gap-6 grid-row-3">
-            <span class="text-5xl underline decoration-indigo-500">Weather in your area 🥶</span>
+            <span class="text-5xl underline decoration-LM-purple-500">Weather in your area 🥶</span>
             <span class="text-2xl">Don't worry, your location is safe</span>
             <span class="text-1xl">This uses your location's longitude latitude to request data from the WeatherAPI, which is then displayed here. If it isn't displaying after allowing the location, reload the page</span>
         </div>
-        <div class="flex flex-col items-start justify-around w-full h-full p-4 bg-zinc-900 rounded-3xl font-OpenSans">
-            <span class="text-3xl font-bold decoration-indigo-500">Weather in <span class="js-city">...</span></span>
+        <div class="flex flex-col items-start justify-around w-full h-full p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
+            <span class="text-3xl font-bold decoration-LM-purple-500">Weather in <span class="js-city">...</span></span>
             <span class="text-4xl font-bold js-temp">0°C</span>
             <div class="flex flex-col">
             <div class="flex flex-row items-center">
@@ -49,7 +49,7 @@ title: 'Luke Milner'
     </div>
     <div class="grid justify-start gap-12 pt-12 mob:pt-6 lg:grid-flow-col lg:grid-cols-2 sm:grid-flow-col sm:grid-cols-2 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
     
-        <div class="flex flex-col items-center justify-start w-full h-full p-4 bg-zinc-900 rounded-3xl font-OpenSans">
+        <div class="flex flex-col items-center justify-start w-full h-full p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
             <div class="z-0 flex flex-row items-center font-extrabold sm:text-9xl lg:text-9xl mob:text-7xl font-bungee opacity-20 js-index">#000</div>
             <div class="flex flex-row items-center justify-between w-full mob:justify-center">
                 <div class="flex flex-col w-64 mob:hidden">
@@ -90,10 +90,10 @@ title: 'Luke Milner'
                 </div>
         </div>
         <div class="grid grid-flow-row gap-6 grid-row-3">
-            <span class="text-5xl underline decoration-pink-500">Search for a Pokemon 🐢</span>
+            <span class="text-5xl underline decoration-LM-pink-500">Search for a Pokemon 🐢</span>
             <div class="flex flex-row">
-                <input type="text" class="js-search-bar w-full bg-[#7c7c7c2b] p-2 rounded-none mr-4 active:bg-zinc-700" placeholder="Search for a pokemon!">
-                <button class="js-button flex items-center justify-center bg-[#7c7c7c2b] hover:bg-zinc-700 h-full rounded-none w-16 cursor-pointer transition-all ease-in-out"><svg class="w-8 h-8" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+                <input type="text" class="w-full p-2 mr-4 rounded-none js-search-bar bg-LM-black-800 active:bg-LM-black-900" placeholder="Search for a pokemon!">
+                <button class="flex items-center justify-center w-16 h-full transition-all ease-in-out rounded-none cursor-pointer js-button bg-LM-black-800 hover:bg-LM-black-900"><svg class="w-8 h-8" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
                 </div>
             <span class="text-2xl">If you find weather boring, you can try this</span>
             <span class="text-1xl">This uses the same theory as above, however, it accepts user input. Like above, each request is made through a PythonAnywhere server which is made with Flask.</span>
