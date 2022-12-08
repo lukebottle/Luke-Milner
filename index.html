@@ -28,13 +28,13 @@ title: 'Luke Milner'
     </div>
     
     <div class="flex flex-col items-start w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-LM-black-700">
-    <div class="grid gap-12 pb-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-2 sm:grid-flow-col sm:grid-cols-2 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
-        <div class="grid grid-flow-row gap-6 grid-row-3">
+    <div class="grid gap-12 pb-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
+        <div class="grid grid-flow-row col-span-5 gap-6 grid-row-3">
             <span class="text-5xl underline decoration-LM-purple-500">Weather in your area 🥶</span>
             <span class="text-2xl">Don't worry, your location is safe</span>
             <span class="text-1xl">This uses your location's longitude latitude to request data from the WeatherAPI, which is then displayed here. If it isn't displaying after allowing the location, reload the page</span>
         </div>
-        <div class="flex flex-col items-start justify-around w-full h-full p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
+        <div class="flex flex-col items-start justify-around w-full h-full col-span-7 p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
             <span class="text-3xl font-bold decoration-LM-purple-500">Weather in <span class="js-city">...</span></span>
             <span class="text-4xl font-bold js-temp">0°C</span>
             <div class="flex flex-col">
@@ -47,9 +47,9 @@ title: 'Luke Milner'
             </div>
         </div>
     </div>
-    <div class="grid justify-start gap-12 pt-12 mob:pt-6 lg:grid-flow-col lg:grid-cols-2 sm:grid-flow-col sm:grid-cols-2 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
+    <div class="grid justify-start gap-12 pt-12 mob:pt-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
     
-        <div class="flex flex-col items-center justify-start w-full h-full p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
+        <div class="flex flex-col items-center justify-start w-full h-full col-span-7 p-4 bg-LM-purple-500 rounded-3xl font-OpenSans">
             <div class="z-0 flex flex-row items-center font-extrabold sm:text-9xl lg:text-9xl mob:text-7xl font-bungee opacity-20 js-index">#000</div>
             <div class="flex flex-row items-center justify-between w-full mob:justify-center">
                 <div class="flex flex-col w-64 mob:hidden">
@@ -89,7 +89,7 @@ title: 'Luke Milner'
                     
                 </div>
         </div>
-        <div class="grid grid-flow-row gap-6 grid-row-3">
+        <div class="grid grid-flow-row col-span-5 gap-6 grid-row-3">
             <span class="text-5xl underline decoration-LM-pink-500">Search for a Pokemon 🐢</span>
             <div class="flex flex-row">
                 <input type="text" class="w-full p-2 mr-4 rounded-none js-search-bar bg-LM-black-800 active:bg-LM-black-900" placeholder="Search for a pokemon!">
