@@ -5,23 +5,23 @@ title: 'Luke Milner'
 {%- comment -%} desktop - lg {%- endcomment -%}
 {%- comment -%} tablet - sm {%- endcomment -%}
 {%- comment -%} mobile - mob {%- endcomment -%}
-{%assign fill = "text-white"%}
+{%assign fill = "text-Pal-white-400"%}
 {%assign icon-fill = "#d0d0d1"%}
 <div id="js-mainTheme" class="js-mainTheme font-light {{fill}}">
     <div class="w-full mx-auto max-w-[1040px] h-full sm:pr-0">
         <div class="flex flex-col items-center gap-4">
-            <h1 class="relative flex justify-start pt-8 text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span
-                    class="bg-LM-black-500 js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span>
+            <h1 class="relative flex justify-start pt-8 text-6xl text-light-100 mob:px-6 mob:flex-wrap "><span
+                    class="bg-Pal-orange-500 js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span>
             </h1>
-            <div class="w-full h-2.5 bg-LM-black-700 bg-opacity-80">
-                <div class="bg-purple-600 h-2.5 dark:bg-LM-orange-500 js-loadBar transition-all ease-in"
+            <div class="w-full h-2.5 bg-Pal-teal-900">
+                <div class="bg-Pal-red-500 h-2.5 dark:bg-Pal-red-500 js-loadBar transition-all ease-in"
                     style="width: 0%"></div>
             </div>
         </div>
 
         <div
-            class="grid w-full p-4 rounded-t-none justify-items-center bg-LM-black-700 bg-opacity-80 js-btnCard sm:gap-24 sm:gap-6 mob:gap-12 sm:grid-cols-8 sm:grid-rows-1 rounded-2xl mob:grid-rows-8 mob:grid-cols-4">
-            <button onclick="myFunction(this, 'text-white')">
+            class="grid w-full p-4 rounded-t-none justify-items-center bg-Pal-teal-900 js-btnCard sm:gap-24 sm:gap-6 mob:gap-12 sm:grid-cols-8 sm:grid-rows-1 rounded-2xl mob:grid-rows-8 mob:grid-cols-4">
+            <button onclick="myFunction(this, 'text-Pal-white-400')">
                 <div class="w-10 h-10 bg-white rounded-full"></div>
             </button>
             <button onclick="myFunction(this, 'text-red-300')">
@@ -47,19 +47,19 @@ title: 'Luke Milner'
             </button>
         </div>
 
-        <div class="flex flex-col items-start w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-LM-black-700 bg-opacity-80">
+        <div class="flex flex-col items-start w-full h-full p-10 mt-6 mb-12 rounded-2xl bg-Pal-teal-900">
             <div
                 class="grid gap-12 pb-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
                 <div class="grid grid-flow-row col-span-5 gap-6 grid-row-3">
-                    <span class="text-5xl underline decoration-LM-purple-500">Weather in your area 🥶</span>
+                    <span class="text-5xl underline decoration-Pal-red-500">Weather in your area 🥶</span>
                     <span class="text-2xl">Don't worry, your location is safe</span>
                     <span class="text-1xl">This uses your location's longitude latitude to request data from the
                         WeatherAPI, which is then displayed here. If it isn't displaying after allowing the location,
                         reload the page</span>
                 </div>
                 <div
-                    class="flex flex-col items-start justify-around w-full h-full col-span-7 p-4 bg-LM-black-500 rounded-3xl font-OpenSans">
-                    <span class="text-3xl font-bold decoration-LM-purple-500">Weather in <span
+                    class="flex flex-col items-start justify-around w-full h-full col-span-7 p-4 bg-Pal-orange-500 rounded-3xl font-OpenSans">
+                    <span class="text-3xl font-bold decoration-Pal-red-500">Weather in <span
                             class="js-city">...</span></span>
                     <span class="text-4xl font-bold js-temp">0°C</span>
                     <div class="flex flex-col">
@@ -76,7 +76,7 @@ title: 'Luke Milner'
                 class="grid justify-start gap-12 pt-12 mob:pt-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
 
                 <div
-                    class="flex flex-col items-center justify-start w-full h-full col-span-7 p-4 bg-LM-black-500 rounded-3xl font-OpenSans">
+                    class="flex flex-col items-center justify-start w-full h-full col-span-7 p-4 bg-Pal-orange-500 rounded-3xl font-OpenSans">
                     <div
                         class="z-0 flex flex-row items-center font-extrabold sm:text-9xl lg:text-9xl mob:text-7xl font-bungee opacity-20 js-index">
                         #000</div>
@@ -108,15 +108,15 @@ title: 'Luke Milner'
                         <div
                             class="grid items-center grid-cols-3 grid-rows-3 overflow-hidden lg:gap-x-12 md:gap-x-12 mob:gap-x-8">
                             <div>HP</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-LM-orange-500 js-PokeHealthBar"
+                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-Pal-red-500 js-PokeHealthBar"
                                 style="width: 0%"></div>
                             <div class="js-PokeHealth">...</div>
                             <div>Attack</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-LM-orange-500 js-PokeAttackBar"
+                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-Pal-red-500 js-PokeAttackBar"
                                 style="width: 0%"></div>
                             <div class="js-PokeAttack">...</div>
                             <div>Defense</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-LM-orange-500 js-PokeDefenseBar"
+                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-Pal-red-500 js-PokeDefenseBar"
                                 style="width: 0%"></div>
                             <div class="js-PokeDefense">...</div>
                         </div>
@@ -124,7 +124,7 @@ title: 'Luke Milner'
                     </div>
                 </div>
                 <div class="grid grid-flow-row col-span-5 gap-6 grid-row-3">
-                    <span class="text-5xl underline decoration-LM-pink-500">Search for a Pokemon 🐢</span>
+                    <span class="text-5xl underline decoration-Pal-red-500">Search for a Pokemon 🐢</span>
                     <div class="flex flex-row">
                         <input type="text"
                             class="w-full p-2 mr-4 rounded-none js-search-bar bg-LM-black-800 active:bg-LM-black-900"

@@ -9,6 +9,52 @@ module.exports = {
   theme: {
     extend:{
     colors:{
+      'Pal':{
+        red: {
+          100: "#ffe2e1",
+          200: "#fec5c2",
+          300: "#fea9a4",
+          400: "#fd8c85",
+          500: "#fd6f67",
+          600: "#ca5952",
+          700: "#98433e",
+          800: "#652c29",
+          900: "#331615"
+      },
+      teal: {
+          100: "#dbefed",
+          200: "#b7dfdb",
+          300: "#94d0ca",
+          400: "#70c0b8",
+          500: "#4cb0a6",
+          600: "#3d8d85",
+          700: "#2e6a64",
+          800: "#1e4642",
+          900: "#0f2321"
+      },
+      orange: {
+          100: "#ffe9da",
+          200: "#ffd3b5",
+          300: "#febd91",
+          400: "#fea76c",
+          500: "#fe9147",
+          600: "#cb7439",
+          700: "#98572b",
+          800: "#663a1c",
+          900: "#331d0e"
+      },
+      white: {
+          100: "#f7f9fa",
+          200: "#eff3f6",
+          300: "#e6ecf1",
+          400: "#dee6ed",
+          500: "#d6e0e8",
+          600: "#abb3ba",
+          700: "#80868b",
+          800: "#565a5d",
+          900: "#2b2d2e"
+      },
+      },
       'LM':{
         black: {
           100: "#d2d0df",
@@ -58,7 +104,8 @@ module.exports = {
       }
     },
     backgroundImage: {
-    'hero-wave': "url('images/hero.png')"
+    'bg-1': "url('images/background-1.png')",
+    'bg-2': "url('images/background-2.png')",
     }
     },
     screens: {

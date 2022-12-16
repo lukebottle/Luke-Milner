@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet"  href="{{site.baseurl}}/assets/css/style.css">
-    <script src="{{site.baseurl}}/assets/js/index.js"></script>
-  </head>
-  <body class="pb-12 bg-LM-black-500 bg-gradient-radial font-Josefin h-fit">
-    {%- include hero.html -%}
-    {{ content }}
-  </body>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+  <script src="{{site.baseurl}}/assets/js/index.js"></script>
+</head>
+
+<body class="pb-12 bg-Pal-teal-500 bg-bg-1 font-Josefin h-fit">
+  {%- include hero.html -%}
+  {{ content }}
+</body>
+
 </html>

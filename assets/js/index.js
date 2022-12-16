@@ -156,7 +156,7 @@ window.onload = init;
 
     } else{
     
-    themeLoad[0].classList.replace('text-white', fontColor);
+    themeLoad[0].classList.replace('text-Pal-white-400', fontColor);
 
     }
 }
@@ -166,8 +166,8 @@ window.onload = init;
 function myFunction(element, color){
     let mainTheme = document.getElementById('js-mainTheme');
 
-    if (mainTheme.classList.contains('text-white')){
-        mainTheme.classList.replace('text-white', color);
+    if (mainTheme.classList.contains('text-Pal-white-400')){
+        mainTheme.classList.replace('text-Pal-white-400', color);
     }
     if (mainTheme.classList.contains('text-red-300')){
         mainTheme.classList.replace('text-red-300', color);
