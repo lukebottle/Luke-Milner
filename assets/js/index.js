@@ -142,6 +142,8 @@ loadingBar[0].style.width = "100%";
 
 window.onload = init;
   function init(){
+    
+    
     document.querySelectorAll(".js-button")[0].addEventListener("click", function() {
     pokemon.search();
 
@@ -155,14 +157,13 @@ window.onload = init;
         })
 
     let themeLoad = document.querySelectorAll('.js-mainTheme');
-    
+    console.log(themeLoad)
     if (fontColor == null){
-
+        
 
     } else{
     
     themeLoad[0].classList.replace('text-white-400', fontColor);
-
     }
 }
   

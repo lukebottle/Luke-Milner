@@ -8,22 +8,27 @@ title: 'Luke Milner'
 {%assign fill = "text-white-400"%}
 {%assign border-fill = "white-400"%}
 {%assign icon-fill = "#d0d0d1"%}
-<div id="js-mainTheme" class="js-mainTheme font-light {{fill}} {{border-fill}} ease-in transition duration-300">
-    <div class="w-full mx-auto max-w-[1040px] h-full sm:pr-0 mob:px-4">
-        <div class="flex flex-col items-center gap-4">
-            <div class="flex justify-start w-full p-20 mt-6 mob:p-4 pattern-diagonal-lines pattern-purple-500 pattern-bg-transparent pattern-size-32 pattern-opacity-100">
-            <h1 class="relative flex justify-start bg-purple-500 text-7xl mob:text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span
-                    class="js-userName">...</span>&nbsp;is&nbsp;<span class="js-userState">...</span>
-            </h1>
+<div id="js-mainTheme" class="js-mainTheme {{fill}} {{border-fill}} ease-in transition duration-300">
+    <div class="w-full mx-auto max-w-[1040px] h-full sm:pr-0 mob:px-4 flex flex-col gap-6">
+        <div class="grid grid-cols-12 py-20 mt-6 pattern-diagonal-lines pattern-red-600 pattern-bg-transparent pattern-size-32 pattern-opacity-100">
+        <div class="flex flex-col items-center col-span-6 gap-6 mob:col-span-12">
+            <div class="flex flex-col justify-start w-full gap-6 p-0 mt-6 bg-white-300 mob:p-4">
+            <span class="text-3xl font-light text-body-300 w-fit">From video games to films</span>
+            <h1 class="relative flex justify-start text-body-500 text-7xl mob:text-6xl text-light-100 mob:px-6 mob:flex-wrap"><span>Media reviews</span></h1>
+            
+            <span class="text-3xl text-body-500 w-fit">These reviews are purely made to achieve how I felt about a piece of media on release.</span>
+            <span class="text-1xl text-body-500 w-fit">With the constant change in how we consume different types of media, I wanted to create a space where I could speak my mind. Mainly with regards to games, they're constantly evolving and are not limited to being a finished product on release</span>
             </div>
             
-            <div class="w-full h-2.5 bg-black-900">
+           
+        </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="w-full h-2.5 bg-red-500">
                 <div class="bg-red-500 h-2.5 dark:bg-red-500 js-loadBar transition-all ease-in"
                     style="width: 0%"></div>
             </div>
-        </div>
-        <div class="flex flex-col">
-        <div class="grid w-full p-4 justify-items-center bg-black-900 mob:px-2 js-btnCard mob:gap-4 sm:grid-cols-8 sm:grid-rows-1 mob:grid-rows-8 mob:grid-cols-4">
+        <div class="grid w-full p-4 justify-items-center bg-black-900 mob:px-2 js-btnCard mob:gap-6 sm:grid-cols-8 sm:grid-rows-1 mob:grid-rows-8 mob:grid-cols-4">
             <button onclick="myFunction(this, 'text-white-400')">
                 <div class="w-10 h-10 rounded-full bg-white-400"></div>
             </button>
@@ -49,111 +54,79 @@ title: 'Luke Milner'
                 <div class="w-10 h-10 rounded-full bg-violet-300"></div>
             </button>
         </div>
-        <div class="flex flex-col w-full gap-4 p-4 bg-black-900">
+        <div class="flex flex-col w-full gap-6 p-4 bg-black-900">
         <div class="text-xl">Quicklinks:</div>
-        <div class="flex flex-row gap-4 overflow-x-auto">
-        <a href="/reviews" class="relative p-2 px-8 m-1 overflow-hidden font-medium text-white border-2 rounded-md cursor-pointer js-btn border-white-400 group">
+        <div class="flex flex-row gap-6 overflow-x-auto">
+        <a href="/luke-milner/" class="relative p-2 px-8 m-1 overflow-hidden font-medium text-white border-2 rounded-md cursor-pointer js-btn border-white-400 group">
             <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-white-400 js-btn-hover top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-            <span class="relative text-base group-hover:text-black-900">Reviews</span>
+            <span class="relative text-base group-hover:text-black-900">Home</span>
         </a>
         </div>
         </div>
         </div>
-        <div class="relative z-auto flex flex-col items-start w-full h-full p-10 mt-6 mob:px-4 rounded-2xl bg-black-900">
-            <div class="absolute mob:hidden -z-10 h-96 w-96 -bottom-32 -left-32 pattern-diagonal-lines pattern-white-600 pattern-bg-transparent pattern-size-32 pattern-opacity-40"></div>
-            <div class="grid gap-12 pb-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
-                <div class="grid grid-flow-row col-span-5 gap-6 mob:col-span-7 grid-row-3">
-                    <span class="text-5xl underline decoration-red-500">Weather in your area 🥶</span>
-                    <span class="text-2xl">Don't worry, your location is safe</span>
-                    <span class="text-1xl">This uses your location's longitude latitude to request data from the
-                        WeatherAPI, which is then displayed here. If it isn't displaying after allowing the location,
-                        reload the page</span>
+        <div class="relative z-auto flex flex-col items-start w-full h-full gap-20 p-10 mt-6 mob:gap-10 mob:px-4 rounded-2xl bg-black-900">
+            <div class="absolute w-1/2 mob:hidden -z-10 h-96 -bottom-32 -left-32 pattern-diagonal-lines pattern-white-600 pattern-bg-transparent pattern-size-32 pattern-opacity-40"></div>
+            <div class="grid gap-12 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-1">
+                <div class="grid grid-flow-row col-span-12 gap-6 mob:col-span-7">
+                    <span class="text-5xl underline decoration-red-500">Why does this matter?</span>
+                    <span class="text-3xl">It doesn't</span>
+                    <span class="text-1xl">This is purely a place for me to archive my opinion and how I felt whilst experiencing the mentioned type of media. Please keep in mind, I am just the average consumer and this space is to be created to archive how I felt about initial expsure of the type of media.</span>
                 </div>
-                <div class="flex flex-col items-start justify-around w-full h-full col-span-7 p-4 bg-black-600 rounded-3xl font-OpenSans">
-                    <span class="text-3xl font-bold decoration-red-500">Weather in <span
-                            class="js-city">...</span></span>
-                    <span class="text-4xl font-bold js-temp">0°C</span>
-                    <div class="flex flex-col">
-                        <div class="flex flex-row items-center">
-                            <img class="js-icon" src="" alt="">
-                            <span class="js-desc">description</span>
-                        </div>
-                        <span class="js-humidity">humidity:</span>
-                        <span class="js-wind">wind:</span>
+               
+            </div>
+            
+            <div class="flex flex-col gap-12 px-4 pb-20 rounded-lg border-red-500 border-[2px] bg-black-800">
+                <span class="-mt-4 -ml-4 text-5xl underline font-bungee decoration-purple-500">Destiny 2 Lightfall</span>
+            <div class="grid gap-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-1">
+                <div class="grid grid-flow-row col-span-12 gap-6 mob:col-span-7">
+                    <div class="flex justify-center w-full">
+                    <span class="p-1 mt-6 text-3xl text-center bg-purple-500">The content that motivated me to start this...</span>
                     </div>
+                    <div class="w-full h-full border-[2px] border-purple-500 -mt-6"></div>
+
+                    <span class="text-1xl">Lightfall is a complicated topic and after completing the campaign and working through some basic neomuna quests I felt so many mixed emotions I wantd to create a review that I can look back on in a year (or when the final shape has taken place).</span>
+                </div>
+            
+               
+            </div>
+            <div class="grid gap-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-1">
+                <div class="grid grid-flow-row col-span-12 gap-6 mob:col-span-7">
+                    <div class="flex justify-center w-full">
+                    <span class="p-1 text-3xl text-center bg-purple-500 mob:w-fit">How did light fall impress me?</span>
+                </div>
+                <div class="w-full h-full border-[2px] border-purple-500 -mt-6"></div>
+                    <span class="text-1xl">The planet/ introduction of neomuna felt fluent, and the traversal from a space-based battle to a city under siege was well executed, though, you do have to ask, did earth just enter a state of temporary slumber after us (the guardian left)? Was Zavala just flabbergasted into staring into space? 
+                        
+                    </span>
                 </div>
             </div>
-            <div
-                class="grid justify-start gap-12 pt-12 mob:pt-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-2">
-
-                <div
-                    class="flex flex-col items-center justify-start w-full h-full col-span-7 p-4 bg-black-600 rounded-3xl font-OpenSans">
-                    <div
-                        class="z-10 flex flex-row items-center font-extrabold sm:text-9xl lg:text-9xl mob:text-7xl font-bungee opacity-20 js-index">
-                        #000</div>
-                    <div class="flex flex-row items-center justify-between w-full mob:justify-center">
-                        <div class="flex flex-col w-64 mob:hidden">
-                            <div class="text-5xl font-semibold font-bungee js-pokeName"></div>
-
-                            <div class="flex flex-row justify-between">
-                                <span class="font-semibold text-1xl font-bungee">Height</span>
-                                <div class="text-sm font-thin js-PokeHeight"></div>
-                            </div>
-
-                            <div class="flex flex-row justify-between">
-                                <span class="font-semibold text-1xl font-bungee">Weight</span>
-                                <span class="text-sm font-thin js-PokeWeight"></span>
-                            </div>
-                            <div class="flex flex-row justify-between">
-                                <span class="font-semibold text-1xl font-bungee">Abilites</span>
-                                <span class="text-sm font-thin js-PokeAbility"></span>
-                            </div>
-                        </div>
-                        <div class="z-10 w-48 h-48 -mt-24">
-                            <img class="js-pokeIcon" src="" alt="">
-                        </div>
-                    </div>
-                    <div
-                        class="grid grid-flow-col grid-cols-2 grid-rows-1 overflow-hidden auto-cols-min mob:grid-cols-1 mob:grid-flow-row mob:gap-2 mob:grid-rows-2 mob:items-center mob:justify-center">
-                        <div class="text-3xl font-bungee mob:flex mob:justify-center">Stats</div>
-                        <div
-                            class="grid items-center grid-cols-3 grid-rows-3 overflow-hidden lg:gap-x-12 md:gap-x-12 mob:gap-x-8">
-                            <div>HP</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-red-500 js-PokeHealthBar"
-                                style="width: 0%"></div>
-                            <div class="js-PokeHealth">...</div>
-                            <div>Attack</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-red-500 js-PokeAttackBar"
-                                style="width: 0%"></div>
-                            <div class="js-PokeAttack">...</div>
-                            <div>Defense</div>
-                            <div class="h-4 transition-all ease-in bg-purple-600 rounded-md dark:bg-red-500 js-PokeDefenseBar"
-                                style="width: 0%"></div>
-                            <div class="js-PokeDefense">...</div>
-                        </div>
-
-                    </div>
+            <div class="grid gap-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-1">
+                <div class="grid grid-flow-row col-span-12 gap-6 mob:col-span-7">
+                    <div class="flex justify-center w-full">
+                    <span class="p-1 text-3xl text-center bg-purple-500">Stranding about</span>
                 </div>
-                <div class="grid grid-flow-row col-span-5 gap-6 mob:col-span-7 grid-row-3">
-                    <span class="text-5xl underline decoration-purple-500">Search for a Pokemon 🐢</span>
-                    <div class="flex flex-row">
-                        <input type="text"
-                            class="w-full p-2 mr-4 rounded-none js-search-bar bg-black-800 active:bg-black-700"
-                            placeholder="Search for a pokemon!">
-                        <button
-                            class="flex items-center justify-center w-16 h-full transition-all ease-in-out rounded-none cursor-pointer js-button bg-black-800 hover:bg-black-700"><svg
-                                class="w-8 h-8" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
-                                </path>
-                            </svg></button>
+                <div class="w-full h-full border-[2px] border-purple-500 -mt-6"></div>
+                        <span>Fast forward, strand... initially, I was impressed, but keep in mind, I am a hunter main. This new subclass can create a new layer of platforming. You're given the tools to area control through area navigation, which sounds backwards, but every subclass falls to kill fast, control the area, and survive. Strand opens the door to instead, relocate, kill, relocate. That's the initial subjection of strand done, as the story progressed, of which  I was playing on legendary, strand became this beautiful annoyance that I wasn't prepared for. We are thrown into arenas fighting harder enemies with new tools (skill issue).</span>
+                        <span>The issue with strand, as mentioned, I played through as a hunter, I feel the grappling hook has potential, however, maybe Bungie could create a new form of ability use, let me explain myself.</span>
+                        <span>The cooldown of the grapple (after the campaign is way too long), I understand it's a grenade replacement, however, it might be wise to implement a non-lethal usage, if the user grapples without following with a punch refund the grapple within 10 seconds (might even be too long). If the user grapples with a follow-up punch, maybe refund the grapple but add a cooldown for the punch. Grappling without damage is as effective as a standard movement (with style) since the grapple speed isn't exactly fast. Also, worth mentioning, the grapple completely replaces the grenade, to me, the grapple does not hold its own in this trade-off. I can now, grapple with something (which I hope to god is the right location) and now I am waiting on a long-ass cooldown to let me go again.</span>
+                        <span>Now, the throwing dagger things... they're not bad, I appreciate the skill ceiling that the whole subclass offers. If you're on top of it, you can reduce the cooldown of the daggers by catching them. The animation is fluent for the daggers too, which is a positive, but this is destiny's bread and butter. </span> 
+                        <span>The supper. Oh boy isn't it super. The final boss of the campaign was melted by constantly left clicks whilst in this super (still on legendary).</span>
+                    </span>
+                </div>
+            </div>
+            <div class="grid gap-12 mob:pb-6 lg:grid-flow-col lg:grid-cols-12 sm:grid-flow-col sm:grid-cols-12 mob:grid-flow-row mob:gap-6 mob:grid-rows-1">
+                <div class="grid grid-flow-row col-span-12 gap-6 gap- mob:col-span-7">
+                    <div class="flex justify-center w-full">
+                    <span class="p-1 text-3xl text-center bg-purple-500">A cliffhanger in a paid service game?</span>
                     </div>
-                    <span class="text-2xl">If you find weather boring, you can try this</span>
-                    <span class="text-1xl">This uses the same theory as above, however, it accepts user input. Like
-                        above, each request is made through a PythonAnywhere server which is made with Flask.</span>
+                    <div class="w-full h-full border-[2px] border-purple-500 -mt-6"></div>
+                    <span class="text-1xl">You can't do it (obviously you can, just doesn't leave much to desire), the world doesn't stop, when a cliffhanger is done in a film the watcher is forced to wait, without any development. But in a service game, the cliff hanger happens and everyone just pretends something more important is happening elsewhere in the world.</span>
+                    Now let's summarise, the campaign was great, I felt the world creation was delivered perfectly. The only problem was the ending, Imagine this, Thanos gets all the infinity stones and just walks off with them... same energy.  
                 </div>
             </div>
         </div>
+          
+        </div>
       
     </div>
+</div>

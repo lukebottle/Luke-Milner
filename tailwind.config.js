@@ -31,6 +31,17 @@ module.exports = {
   },
     extend:{
     colors:{
+      'body': {
+        700: '#1F1F1F',
+        600: '#292929',
+        500: '#2A2A2A',
+        DEFAULT: '#2A2A2A',
+        400: '#595959',
+        300: '#757575',
+        'line': '#D6D6D6',
+        'shadow': 'rgba(0,0,0,0.25)',
+
+      },
         purple: {
           100: "#e1d5f7",
           200: "#c3aaef",
