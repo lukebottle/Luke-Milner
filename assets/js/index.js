@@ -89,12 +89,17 @@ const successCallback = (position) => {
   };
   
   const errorCallback = (error) => {
-    console.log(error);
   };
   
   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
-let fontColor = window.localStorage.getItem('font-color');
+let fontColor = window.localStorage.getItem('font-color'),
+    btnTheme = document.querySelectorAll('.js-btn'),
+    btnHover = document.querySelectorAll('.js-btn-hover'),
+    btnColor = "";
+    btnColor = fontColor.replace('text-', '');
+    btnTheme[0].classList.replace(`border-white-400`, `border-${btnColor}`);
+    btnHover[0].classList.replace(`bg-white-400`, `bg-${btnColor}`);
 
 let apiUrl = `https://lukebottle.pythonanywhere.com/`;
 
@@ -156,7 +161,7 @@ window.onload = init;
 
     } else{
     
-    themeLoad[0].classList.replace('text-Pal-white-400', fontColor);
+    themeLoad[0].classList.replace('text-white-400', fontColor);
 
     }
 }
@@ -164,31 +169,58 @@ window.onload = init;
 
 
 function myFunction(element, color){
-    let mainTheme = document.getElementById('js-mainTheme');
+    let mainTheme = document.getElementById('js-mainTheme'),
+    btnTheme = document.querySelectorAll('.js-btn'),
+    btnHover = document.querySelectorAll('.js-btn-hover'),
+    btnColor = "";
 
-    if (mainTheme.classList.contains('text-Pal-white-400')){
-        mainTheme.classList.replace('text-Pal-white-400', color);
+    if (mainTheme.classList.contains('text-white-400')){
+        mainTheme.classList.replace('text-white-400', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-white-400', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-white-400`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-red-300')){
         mainTheme.classList.replace('text-red-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-red-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-red-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-orange-300')){
         mainTheme.classList.replace('text-orange-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-orange-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-orange-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-yellow-300')){
         mainTheme.classList.replace('text-yellow-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-yellow-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-yellow-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-green-300')){
         mainTheme.classList.replace('text-green-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-green-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-green-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-blue-300')){
         mainTheme.classList.replace('text-blue-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-blue-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-blue-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-indigo-300')){
         mainTheme.classList.replace('text-indigo-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-indigo-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-indigo-300`, `bg-${btnColor}`);
     }
     if (mainTheme.classList.contains('text-violet-300')){
         mainTheme.classList.replace('text-violet-300', color);
+        btnColor = color.replace('text-', '');
+        btnTheme[0].classList.replace('border-violet-300', `border-${btnColor}`);
+        btnHover[0].classList.replace(`bg-violet-300`, `bg-${btnColor}`);
     }
     window.localStorage.setItem('font-color' , color);
 

@@ -7,9 +7,41 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    patterns: {
+      opacities: {
+          100: "1",
+          80: ".80",
+          60: ".60",
+          40: ".40",
+          20: ".20",
+          10: ".10",
+          5: ".05",
+      },
+      sizes: {
+          1: "0.25rem",
+          2: "0.5rem",
+          4: "1rem",
+          6: "1.5rem",
+          8: "2rem",
+          16: "4rem",
+          20: "5rem",
+          24: "6rem",
+          32: "8rem",
+      }
+  },
     extend:{
     colors:{
-      'Pal':{
+        purple: {
+          100: "#e1d5f7",
+          200: "#c3aaef",
+          300: "#a480e7",
+          400: "#8655df",
+          500: "#682bd7",
+          600: "#5322ac",
+          700: "#3e1a81",
+          800: "#2a1156",
+          900: "#15092b"
+        },
         red: {
           100: "#ffe2e1",
           200: "#fec5c2",
@@ -31,7 +63,7 @@ module.exports = {
           700: "#043c3a",
           800: "#032827",
           900: "#011413"
-},
+      },
       black: {
           100: "#ccd5d5",
           200: "#99abaa",
@@ -65,54 +97,6 @@ module.exports = {
           800: "#565a5d",
           900: "#2b2d2e"
       },
-      },
-      'LM':{
-        black: {
-          100: "#d2d0df",
-          200: "#a5a0bf",
-          300: "#78719f",
-          400: "#4b417f",
-          500: "#1e125f",
-          600: "#180e4c",
-          700: "#120b39",
-          800: "#0c0726",
-          900: "#060413"
-      },
-      pink: {
-          100: "#fee1f1",
-          200: "#fdc3e3",
-          300: "#fca5d5",
-          400: "#fb87c7",
-          500: "#fa69b9",
-          600: "#c85494",
-          700: "#963f6f",
-          800: "#642a4a",
-          900: "#321525"
-      },
-      orange: {
-          100: "#ffedd0",
-          200: "#ffdba1",
-          300: "#fec972",
-          400: "#feb743",
-          500: "#fea514",
-          600: "#cb8410",
-          700: "#98630c",
-          800: "#664208",
-          900: "#332104"
-      },
-      purple: {
-          100: "#e8dcff",
-          200: "#d1b9ff",
-          300: "#ba96ff",
-          400: "#a373ff",
-          500: "#8c50ff",
-          600: "#7040cc",
-          700: "#543099",
-          800: "#382066",
-          900: "#1c1033"
-      },
-
-      }
     },
     backgroundImage: {
     'bg-1': "url('images/background-1.png')",
@@ -149,6 +133,7 @@ module.exports = {
   },
   plugins: [
   require('@tailwindcss/typography'),
+  require('tailwindcss-bg-patterns'),
   //require('@tailwindcss/line-clamp'),
   //require('@tailwindcss/forms'),
   ]
